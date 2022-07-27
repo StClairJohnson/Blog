@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import { Link } from "react-router-dom"
 import Grid from "@mui/material/Grid"
 import Box from "@mui/material/Box"
+import Stack from "@mui/material/Stack"
 import { styled } from '@mui/material/styles';
 
 const Item = styled(Grid)(({ theme }) => ({
@@ -21,6 +22,7 @@ function Cards(props) {
     <Box sx={{ flexGrow: 1 }}>
     <Grid item xs={15} container spacing={1}>
       <Item>
+      <Stack direction="column" spacing={2}>
       <CardActionArea component="a" href="#">
         <Card sx={{ display: 'flex' }}>
           <CardContent sx={{ flex: 1 }}>
@@ -83,6 +85,7 @@ function Cards(props) {
           />
         </Card>
       </CardActionArea>
+      </Stack>
       </Item>
     </Grid>
     </Box> 

@@ -8,12 +8,8 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
-import Main from './Main';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
-import post1 from './blog-post.1.md';
-import post2 from './blog-post.2.md';
-import post3 from './blog-post.3.md';
 import Cards from "./Cards"
 
 
@@ -44,8 +40,6 @@ const cards =[
     
   }
 ]
-
-const posts = [post1, post2, post3];
 
 const sidebar = {
   title: 'About',
@@ -88,7 +82,6 @@ export default function Blog() {
           </Grid>
     <Grid container spacing={5} sx={{ mt: 3 }}>
     
-            <Main title="From the firehose" posts={posts}/>
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}

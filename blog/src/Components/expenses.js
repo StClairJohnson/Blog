@@ -8,7 +8,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
-import Main from './Main';
+import TrackMain from './TrackMain';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
 import post1 from './blog-post.1.md';
@@ -76,7 +76,7 @@ export default function Expenses() {
           <MainFeaturedPost post={mainFeaturedPost} />
     <Grid container spacing={5} sx={{ mt: 3 }}>
     
-            <Main title="From the firehose" posts={posts}/>
+            <TrackMain title="About My Track Life" posts={posts}/>
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}
