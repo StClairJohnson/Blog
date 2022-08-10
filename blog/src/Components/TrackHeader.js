@@ -11,12 +11,12 @@ import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { FormGroup } from '@mui/material';
 
-function Header(props) {
+function TrackHeader(props) {
 
   const theme = createTheme({
     palette: {
         primary: {
-          main: '#124116',
+          main: '#512da8',
           contrastText: '#000000'
         },
         secondary: {
@@ -59,8 +59,8 @@ function Header(props) {
           St.Clair's Blog
         </Typography>
         <FormGroup className="left-buttons" sx={{display: 'inline'}}>
-        <IconButton style={{color: '#ffffff'}}>
-        <Link to="/"><HomeIcon style={{color: '#ffffff'}}/></Link>
+        <IconButton>
+        <Link to="/"><HomeIcon style={{color: '#ffffff'}} /></Link>
         </IconButton>
         <Link to="/signup">
         <Button variant="outlined" size="small" style={{color: '#fff', backgroundColor: '#ffa726'}}>
@@ -75,7 +75,7 @@ function Header(props) {
   );
 }
 
-Header.propTypes = {
+TrackHeader.propTypes = {
   sections: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
@@ -85,4 +85,4 @@ Header.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
-export default Header;
+export default TrackHeader;

@@ -9,6 +9,7 @@ import Grid from "@mui/material/Grid"
 import Box from "@mui/material/Box"
 import Stack from "@mui/material/Stack"
 import { styled } from '@mui/material/styles';
+import Indoor from "./Screenshot_20220718-064341_Photos.jpg"
 
 const Item = styled(Grid)(({ theme }) => ({
   padding: theme.spacing(1),
@@ -39,8 +40,8 @@ function Cards(props) {
           </CardContent>
           <CardMedia
             component="img"
-            sx={{ width: 160, display: { xs: 'none', sm: 'block' } }}
-            image="https://static.wikia.nocookie.net/2c0fe3dc-6dae-4b7e-ba08-a1bc08044711"
+            sx={{ width: 140, height: 155, display: { xs: 'none', sm: 'block' } }}
+            image={Indoor}
           />
         </Card>
       </CardActionArea>

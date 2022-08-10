@@ -1,8 +1,13 @@
+import React from 'react'
+import Stack from '@mui/material/Stack'
+import Struggle from './Screenshot_20220718-064445_Photos.jpg'
+import Awards from './20220718_051047.jpg'
+
 function TrackText () {
 
     return (
     <div>
-        <h1>How it Started</h1>
+        <h2>How it Started</h2>
         <p>
             I first tried out for the track team in 6th Grade. It was the first official sport I 
             played. I chose track because I always loved racing my friends in my neighborhood,
@@ -11,7 +16,8 @@ function TrackText () {
             I was determined to get better and become the best runner I could. I then 
             went on to participate in Track and Field throughout my middle school career.
         </p>
-        <h1>High School Running</h1>
+        <h2>High School Running</h2>
+        <Stack direction="row">
         <p>
             Because i enjoyed running track in middle school so much, I decided to try out
             for the running sports in high school. Unfortunately, Track and Field season
@@ -22,6 +28,8 @@ function TrackText () {
              required to run three miles without stopping up hills and through the forest, 
              I was not happy about that.
         </p>
+        <img className="vertical-photo-right" src={Struggle} alt="pain"></img>
+        </Stack>
         <p>
             It took a lot of mental fortitute and willpower to continue with this sport despite
              my dislike for it at first. Since I was new and not used to running those types 
@@ -33,7 +41,8 @@ function TrackText () {
              Field during my high school career. After the torture of Cross Country, It helped
              me improve at the track events I did before.
         </p>
-        <h1>Conclusion</h1>
+        <h2>Conclusion</h2>
+        <Stack direction="column">
         <p>
             I had faced a large amount of struggles, both physical and mental, and have growm as 
             a person from each and every one of them. It was because I had perservereance and 
@@ -42,6 +51,8 @@ function TrackText () {
             room for improvement. But I can proudly say that running track and cross country was 
             one of the best decisions that I had ever made. 
         </p>
+        <img className="awards" src={Awards} alt="pain"></img>
+        </Stack>
     </div>
     )
 }
